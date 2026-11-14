@@ -1,0 +1,12 @@
+{
+    "name": "Laravel Base Model DevContainer",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/var/www/html",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+            ]
+        }
+    }
+}
