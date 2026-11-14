@@ -16,7 +16,9 @@ RUN apt-get update && apt-get install -y \
     unzip \
     curl \
     git \
-    && docker-php-ext-install pdo_mysql mbstring bcmath gd
+    && docker-php-ext-install pdo_mysql mbstring bcmath gd \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # install composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
